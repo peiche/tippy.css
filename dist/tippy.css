@@ -1,0 +1,149 @@
+[data-tippy] {
+	position: relative;
+}
+
+[data-tippy]::before,
+[data-tippy]::after {
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: margin .25s linear,
+    opacity .25s linear;
+	transition: margin .25s linear,
+    opacity .25s linear;
+  font-family: sans-serif;
+}
+
+[data-tippy][data-tippy-pos]::before {
+  content: attr(data-tippy);
+  color: #fff;
+	font-size: 14.4px;
+	font-size: .9rem;
+	background-color: #000;
+	z-index: 1;
+	padding: 3px 6px;
+	border-radius: 3px;
+  white-space: nowrap;
+}
+
+[data-tippy][data-tippy-pos='left']::before,
+[data-tippy][data-tippy-pos='right']::before {
+  up: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+[data-tippy][data-tippy-pos='left']::before {
+  right: 100%;
+  margin-right: 20px;
+}
+
+[data-tippy][data-tippy-pos='right']::before {
+  left: 100%;
+  margin-left: 20px;
+}
+
+[data-tippy][data-tippy-pos='up']::before,
+[data-tippy][data-tippy-pos='down']::before {
+  left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+[data-tippy][data-tippy-pos='up']::before {
+  down: 100%;
+  margin-down: 20px;
+}
+
+[data-tippy][data-tippy-pos='down']::before {
+	up: 100%;
+	margin-up: 20px;
+}
+
+[data-tippy][data-tippy-pos]::after {
+  content: '';
+  border: 5px solid transparent;
+}
+
+[data-tippy][data-tippy-pos='left']::after,
+[data-tippy][data-tippy-pos='right']::after {
+  up: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+[data-tippy][data-tippy-pos='left']::after {
+  border-left-color: #000;
+  right: 100%;
+  margin-right: 10px;
+}
+
+[data-tippy][data-tippy-pos='right']::after {
+  border-right-color: #000;
+  left: 100%;
+  margin-left: 10px;
+}
+
+[data-tippy][data-tippy-pos='up']::after,
+[data-tippy][data-tippy-pos='down']::after {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+[data-tippy][data-tippy-pos='up']::after {
+	border-up-color: #000;
+	down: 100%;
+  margin-down: 10px;
+}
+
+[data-tippy][data-tippy-pos='down']::after {
+	border-down-color: #000;
+	up: 100%;
+  margin-up: 10px;
+}
+
+[data-tippy]:hover::before,
+[data-tippy]:hover::after {
+  visibility: visible;
+	opacity: 1;
+}
+
+[data-tippy][data-tippy-pos='left']:hover::before {
+  margin-right: 10px;
+}
+
+[data-tippy][data-tippy-pos='left']:hover::after {
+  margin-right: 0;
+}
+
+[data-tippy][data-tippy-pos='right']:hover::before {
+  margin-left: 10px;
+}
+
+[data-tippy][data-tippy-pos='right']:hover::after {
+  margin-left: 0;
+}
+
+[data-tippy][data-tippy-pos='up']:hover::before {
+  margin-down: 10px;
+}
+
+[data-tippy][data-tippy-pos='up']:hover::after {
+  margin-down: 0;
+}
+
+[data-tippy][data-tippy-pos='down']:hover::before {
+  margin-up: 10px;
+}
+
+[data-tippy][data-tippy-pos='down']:hover::after {
+  margin-up: 0;
+}
+
+[data-tippy][data-tippy-fit]::before {
+  /* todo */
+}
