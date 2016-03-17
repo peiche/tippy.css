@@ -1,7 +1,7 @@
 {
   "name": "tippy.css",
   "version": "1.0.0",
-  "description": "Pure CSS tooltips with options galore.",
+  "description": "Pure CSS tooltips.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
