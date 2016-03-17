@@ -5,7 +5,7 @@ var postcss   = require('gulp-postcss');
 var reporter  = require('postcss-reporter');
 var stylelint = require('stylelint');
 
-gulp.task("clean", function() {
+gulp.task('clean', function() {
   return del('dist');
 });
 
@@ -22,7 +22,13 @@ gulp.task('css', ['clean'], function() {
   return (
     gulp.src('./src/tippy.css')
     .pipe(postcss([
-      require("postcss-cssnext")()
+      require("postcss-cssnext")({
+        browsers: [
+          'last 2 versions',
+          'ie <= 9'
+        ],
+        compress: false
+      })
     ]))
     .pipe(gulp.dest('./dist'))
   );
@@ -30,10 +36,7 @@ gulp.task('css', ['clean'], function() {
 
 gulp.task('cssnano', ['css'], function() {
   return (
-    gulp.src([
-      './dist/*.css',
-      '!./dist/*.min.css'
-    ])
+    gulp.src('./dist/tippy.css')
     .pipe(postcss([
       require('cssnano')()
     ]))
