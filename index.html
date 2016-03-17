@@ -9,22 +9,19 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/tippy.min.css" media="screen">
-
-    <style>
-    .main-content .btn {
-      color: #666;
-      border-color: #666;
-      cursor: default;
-    }
-    </style>
   </head>
   <body>
+
+    <div id="staaars">
+      <a class="github-button" href="https://github.com/peiche/tippy.css" data-icon="octicon-star" data-style="mega" data-count-href="/peiche/tippy.css/stargazers" data-count-api="/repos/peiche/tippy.css#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star peiche/tippy.css on GitHub">Star</a>
+    </div>
+
     <section class="page-header">
       <h1 class="project-name">Tippy.css</h1>
-      <h2 class="project-tagline">Pure CSS tooltips.</h2>
-      <a href="https://github.com/peiche/tippy.css" class="btn">View on GitHub</a>
-      <a href="https://raw.githubusercontent.com/peiche/tippy.css/master/dist/tippy.min.css" class="btn">Download CSS</a>
-      <a href="https://github.com/peiche/tippy.css/zipball/master" class="btn">Download zip</a>
+      <h2 class="project-tagline"><span class="tooltip">Pure CSS tooltips.</span></h2>
+      <h2 class="project-tagline">Create tooltips with ease, without JavaScript.</h2>
+      <a href="https://github.com/peiche/tippy.css" class="btn" data-tippy="https://github.com/peiche/tippy.css">GitHub Project</a>
+      <a href="https://raw.githubusercontent.com/peiche/tippy.css/master/dist/tippy.css" class="btn" data-tippy="Download the stylesheet" download>Download CSS</a>
     </section>
 
     <section class="main-content">
@@ -101,6 +98,13 @@
 <div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">data-tippy</span>=<span class="pl-s"><span class="pl-pds">"</span>Super awesome picture<span class="pl-pds">"</span></span>&gt;
   &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>cats-rule.jpg<span class="pl-pds">"</span></span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>
+  <span data-tippy="Super awesome picture">
+    <img src="img/cats-rule.jpg">
+  </span>
+</p>
+
 </li>
 <li><p>If your stylesheet is using pseudo-elements on certain elements, you will run into conflicts. This will result in weird behavior or non-working tooltips.</p></li>
 <li><p>HTML inside tooltips will not work, so don't even try.</p></li>
@@ -120,6 +124,7 @@
 
     </section>
 
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
   </body>
 </html>

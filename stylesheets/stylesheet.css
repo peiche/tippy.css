@@ -65,11 +65,11 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .page-header {
-    padding: 3rem 4rem; } }
+    padding: 5rem 4rem; } }
 
 @media screen and (max-width: 42em) {
   .page-header {
-    padding: 2rem 1rem; } }
+    padding: 5rem 1rem; } }
 
 .project-name {
   margin-top: 0;
@@ -243,3 +243,35 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.main-content .btn {
+  color: #666;
+  border-color: #666;
+  cursor: default;
+}
+
+.tooltip {
+  background: #000;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.tooltip:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 10px solid transparent;
+  border-bottom-color: #000;
+}
+
+#staaars {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
