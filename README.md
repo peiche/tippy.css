@@ -52,6 +52,8 @@ Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of C
 
 * If your stylesheet is using pseudo-elements on certain elements, you will run into conflicts. This will result in weird behavior or non-working tooltips.
 
+* HTML inside tooltips will not work, so don't even try.
+
 * Tooltips don't work on `<button>` elements in Internet Explorer or Edge. I don't know why. :/
 
 ### License
