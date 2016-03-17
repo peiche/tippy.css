@@ -8,6 +8,15 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/tippy.min.css" media="screen">
+
+    <style>
+    .main-content .btn {
+      color: #666;
+      border-color: #666;
+      cursor: default;
+    }
+    </style>
   </head>
   <body>
     <section class="page-header">
@@ -33,6 +42,10 @@
 &lt;<span class="pl-ent">span</span> <span class="pl-e">data-tippy</span>=<span class="pl-s"><span class="pl-pds">"</span>Hello world<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">span</span>&gt;
 &lt;<span class="pl-ent">div</span> <span class="pl-e">data-tippy</span>=<span class="pl-s"><span class="pl-pds">"</span>Full width element<span class="pl-pds">"</span></span>&gt;...&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
+<p>
+  <span class="btn" data-tippy="Isn't this neat?">Hover me</span>
+</p>
+
 <h3>
 <a id="tooltip-positions" class="anchor" href="#tooltip-positions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tooltip positions</h3>
 
@@ -43,10 +56,33 @@
 &lt;<span class="pl-ent">button</span> <span class="pl-e">data-tippy</span>=<span class="pl-s"><span class="pl-pds">"</span>I am a tooltip!<span class="pl-pds">"</span></span> <span class="pl-e">data-tippy-pos</span>=<span class="pl-s"><span class="pl-pds">"</span>left<span class="pl-pds">"</span></span>&gt;
 &lt;<span class="pl-ent">button</span> <span class="pl-e">data-tippy</span>=<span class="pl-s"><span class="pl-pds">"</span>I am a tooltip!<span class="pl-pds">"</span></span> <span class="pl-e">data-tippy-pos</span>=<span class="pl-s"><span class="pl-pds">"</span>right<span class="pl-pds">"</span></span>&gt;</pre></div>
 
+<p>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="up">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="down">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="left">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="right">Hover me</span>
+</p>
+
 <h3>
 <a id="special-animations" class="anchor" href="#special-animations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Special animations</h3>
 
 <p>The tooltips don't have much by way of default animation. They fade in, but that's it. There are two optional animation types, however. Include the <code>data-tippy-animate</code> property and one of two values, "slide" or "bubble".</p>
+
+<h4>Slide:</h4>
+<p>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="up" data-tippy-animate="slide">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="down" data-tippy-animate="slide">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="left" data-tippy-animate="slide">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="right" data-tippy-animate="slide">Hover me</span>
+</p>
+
+<h4>Bubble:</h4>
+<p>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="up" data-tippy-animate="bubble">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="down" data-tippy-animate="bubble">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="left" data-tippy-animate="bubble">Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="right" data-tippy-animate="bubble">Hover me</span>
+</p>
 
 <h3>
 <a id="browser-support" class="anchor" href="#browser-support" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Browser support</h3>
@@ -72,7 +108,7 @@
 </ul>
 
 <h3>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
+<a id="license" class="anchor" href="https://github.com/peiche/tippy.css/blob/master/LICENSE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h3>
 
 <p>Tippy.css has been released under the <a href="LICENSE">MIT license</a>.</p>
 
@@ -84,6 +120,6 @@
 
     </section>
 
-  
+
   </body>
 </html>
