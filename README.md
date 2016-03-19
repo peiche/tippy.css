@@ -54,7 +54,9 @@ Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of C
 
 * HTML inside tooltips will not work, so don't even try.
 
-* Tooltips don't work on `<button>` elements in Internet Explorer or Edge. I don't know why. :/
+* Tooltips don't work on `<button>` elements in Internet Explorer. I don't know why. :/
+
+* The bubble animation uses the `clip-path` property, and (as of this writing) only works in Chrome and Vivaldi.
 
 ### License
 
