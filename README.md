@@ -58,6 +58,8 @@ Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of C
 
 * The bubble animation uses the `clip-path` property, and (as of this writing) only works in Chrome, Vivaldi, and Safari.
 
+* Tooltips on links that underline on hover get underlined in Edge.
+
 ### License
 
 Tippy.css has been released under the [MIT license](LICENSE).
