@@ -36,7 +36,7 @@ The tooltips don't have much by way of default animation. They fade in, but that
 
 ### Browser support
 
-Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of Chrome, Firefox, Edge (yay Windows 10 Insider program), and Vivaldi (my browser of choice).
+Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of Chrome, Firefox, Edge (yay Windows 10 Insider program), Vivaldi (my browser of choice), and Safari.
 
 ### Known issues
 
@@ -56,7 +56,7 @@ Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of C
 
 * Tooltips don't work on `<button>` elements in Internet Explorer. I don't know why. :/
 
-* The bubble animation uses the `clip-path` property, and (as of this writing) only works in Chrome and Vivaldi.
+* The bubble animation uses the `clip-path` property, and (as of this writing) only works in Chrome, Vivaldi, and Safari.
 
 ### License
 
