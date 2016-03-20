@@ -43,10 +43,6 @@
           transform: translate3d(-50%, 0, 0);
 }
 
-[data-tippy]:hover:before {
-  text-decoration: none !important;
-}
-
 /* reset for other positions */
 
 [data-tippy][data-tippy-pos]:before {
