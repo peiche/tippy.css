@@ -29,7 +29,6 @@
   border-radius: 3px;
   white-space: nowrap;
   margin-top: 10px;
-  text-decoration: none;
 }
 
 [data-tippy]:after {
@@ -42,6 +41,10 @@
 [data-tippy]:hover:after {
   -webkit-transform: translate3d(-50%, 0, 0);
           transform: translate3d(-50%, 0, 0);
+}
+
+[data-tippy]:hover:before {
+  text-decoration: none;
 }
 
 /* reset for other positions */
