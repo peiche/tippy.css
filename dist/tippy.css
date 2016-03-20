@@ -44,7 +44,7 @@
 }
 
 [data-tippy]:hover:before {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* reset for other positions */
