@@ -29,6 +29,7 @@
   border-radius: 3px;
   white-space: nowrap;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 [data-tippy]:after {
