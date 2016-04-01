@@ -44,6 +44,27 @@
 </p>
 
 <h3>
+<a id="real-elements" class="anchor" href="#real-elements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Real Elements</h3>
+
+<p>
+<a href="#" data-tippy="Fancy!">Link</a>
+</p>
+
+<p>
+<span data-tippy="Fancy!">Span tag</span>
+</p>
+
+<p>
+<button type="button" data-tippy="Fancy!">Button</button>
+</p>
+
+<div data-tippy="Fancy!" style="background-color: #eee;">Div tag</div>
+
+<p data-tippy="Fancy!" style="background-color: #eee;">Paragraph tag</p>
+
+</p>
+
+<h3>
 <a id="tooltip-positions" class="anchor" href="#tooltip-positions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tooltip positions</h3>
 
 <p>By default, tooltips appear below the element to which they belong. By including the <code>data-tippy-pos</code> property, you can control how they appear. There are four potential values: "up", "down", "left", and "right".</p>
@@ -111,6 +132,19 @@
 <li><p>Tooltips don't work on <code>&lt;button&gt;</code> elements in Internet Explorer. I don't know why. :/</p></li>
 <li><p>The bubble animation uses the <code>clip-path</code> property, and (as of this writing) only works in Chrome, Vivaldi, and Safari.</p></li>
 <li><p>Tooltips on links that underline on hover get underlined in Edge.</p></li>
+<li><p>Tooltips on buttons get included in the focus outline, like so:</p>
+  <p>
+    <button id="focus-ex" type="button" data-tippy="Tooltip">Hovered button</button>
+  </p>
+  <p style="margin-top: 3em;">You can override this behavior with this code:</p>
+  <p>
+<pre>button[data-tippy]:focus {
+  outline: none;
+}</pre>
+  </p>
+  <p>I won't include this code in the stylesheet, however. Removing the button's outline will remove its accessibility, so think carefully before you implement this.</p>
+  <p>Learn more at <a href="http://www.outlinenone.com/">www.outlinenone.com</a>.</p>
+</li>
 </ul>
 
 <h3>

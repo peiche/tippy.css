@@ -275,3 +275,11 @@ a {
   top: 20px;
   right: 20px;
 }
+
+#focus-ex {
+  outline: auto;
+}
+#focus-ex:before,
+#focus-ex:after {
+  opacity: 1;
+}
