@@ -60,6 +60,16 @@ Tippy.css has been tested in Internet Explorer 9-11 and the latest versions of C
 
 * Tooltips on links that underline on hover get underlined in Edge.
 
+* Tooltips on buttons get included in the focus outline.  
+  You can override this behavior with this code:
+  ```css
+  button[data-tippy]:focus {
+    outline: none;
+  }
+  ```
+  I won't include this code in the stylesheet, however. Removing the button's outline will remove its accessibility, so think carefully before you implement this.  
+  Learn more at [www.outlinenone.com](http://www.outlinenone.com).
+
 ### License
 
 Tippy.css has been released under the [MIT license](LICENSE).
