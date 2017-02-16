@@ -276,10 +276,20 @@ a {
   right: 20px;
 }
 
-#focus-ex {
+.outline-auto {
   outline: auto;
 }
-#focus-ex:before,
-#focus-ex:after {
-  opacity: 1;
+
+h3 {
+  position: relative;
+}
+
+.anchor {
+  padding-right: 10px;
+  display: none;
+  position: absolute;
+  right: 100%;
+}
+h3:hover .anchor {
+  display: block;
 }
