@@ -16,7 +16,7 @@
   transition: all var(--timing) ease-out;
   transition-delay: var(--timing);
   font-family: sans-serif;
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
   transform-origin: top;
   top: 100%;
   left: 50%;
@@ -26,13 +26,14 @@
 [data-tippy]::before {
   content: attr(data-tippy);
   color: var(--color);
-  font-size: 13px;
+  font-size: 14px;
   background-color: var(--background-color);
   z-index: 1;
   padding: 3px 6px;
   border-radius: 3px;
   white-space: nowrap;
   margin-top: 10px;
+  font-weight: normal;
 }
 
 [data-tippy]::after {
@@ -43,7 +44,7 @@
 
 [data-tippy]:hover::before,
 [data-tippy]:hover::after {
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
 }
 
 /* reset for other positions */
@@ -79,7 +80,7 @@
 [data-tippy][data-tippy-pos='up']::before,
 [data-tippy][data-tippy-pos='up']::after {
   bottom: 100%;
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
 }
 
 [data-tippy][data-tippy-pos='up']::before {
@@ -96,7 +97,7 @@
 [data-tippy][data-tippy-pos='down']::before,
 [data-tippy][data-tippy-pos='down']::after {
   top: 100%;
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
 }
 
 [data-tippy][data-tippy-pos='down']::before {
@@ -122,7 +123,7 @@
 [data-tippy][data-tippy-pos='left']::before,
 [data-tippy][data-tippy-pos='left']::after {
   right: 100%;
-  transform: translate3d(0, -50%, 0);
+  transform: translate(0, -50%);
 }
 
 [data-tippy][data-tippy-pos='left']::before {
@@ -138,7 +139,7 @@
 [data-tippy][data-tippy-pos='right']::before,
 [data-tippy][data-tippy-pos='right']::after {
   left: 100%;
-  transform: translate3d(0, -50%, 0);
+  transform: translate(0, -50%);
 }
 
 [data-tippy][data-tippy-pos='right']::before {
@@ -160,46 +161,46 @@
 
 [data-tippy][data-tippy-animate='slide']::before,
 [data-tippy][data-tippy-animate='slide']::after {
-  transform: translate3d(-50%, -10px, 0);
+  transform: translate(-50%, -10px);
 }
 
 [data-tippy][data-tippy-animate='slide']:hover::before,
 [data-tippy][data-tippy-animate='slide']:hover::after {
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
 }
 
 [data-tippy][data-tippy-pos='up'][data-tippy-animate='slide']::before,
 [data-tippy][data-tippy-pos='up'][data-tippy-animate='slide']::after {
-  transform: translate3d(-50%, 10px, 0);
+  transform: translate(-50%, 10px);
 }
 
 [data-tippy][data-tippy-pos='down'][data-tippy-animate='slide']::before,
 [data-tippy][data-tippy-pos='down'][data-tippy-animate='slide']::after {
-  transform: translate3d(-50%, -10px, 0);
+  transform: translate(-50%, -10px);
 }
 
 [data-tippy][data-tippy-pos='up'][data-tippy-animate='slide']:hover::before,
 [data-tippy][data-tippy-pos='up'][data-tippy-animate='slide']:hover::after,
 [data-tippy][data-tippy-pos='down'][data-tippy-animate='slide']:hover::before,
 [data-tippy][data-tippy-pos='down'][data-tippy-animate='slide']:hover::after {
-  transform: translate3d(-50%, 0, 0);
+  transform: translate(-50%, 0);
 }
 
 [data-tippy][data-tippy-pos='left'][data-tippy-animate='slide']::before,
 [data-tippy][data-tippy-pos='left'][data-tippy-animate='slide']::after {
-  transform: translate3d(10px, -50%, 0);
+  transform: translate(10px, -50%);
 }
 
 [data-tippy][data-tippy-pos='right'][data-tippy-animate='slide']::before,
 [data-tippy][data-tippy-pos='right'][data-tippy-animate='slide']::after {
-  transform: translate3d(-10px, -50%, 0);
+  transform: translate(-10px, -50%);
 }
 
 [data-tippy][data-tippy-pos='left'][data-tippy-animate='slide']:hover::before,
 [data-tippy][data-tippy-pos='left'][data-tippy-animate='slide']:hover::after,
 [data-tippy][data-tippy-pos='right'][data-tippy-animate='slide']:hover::before,
 [data-tippy][data-tippy-pos='right'][data-tippy-animate='slide']:hover::after {
-  transform: translate3d(0, -50%, 0);
+  transform: translate(0, -50%);
 }
 
 /* animated - bubble */
@@ -266,17 +267,17 @@
 /* sizes */
 
 [data-tippy][data-tippy-size="tiny"]::before {
-  font-size: 50%;
+  font-size: 10px;
 }
 
 [data-tippy][data-tippy-size="small"]::before {
-  font-size: 75%;
+  font-size: 12px;
 }
 
 [data-tippy][data-tippy-size="large"]::before {
-  font-size: 125%;
+  font-size: 16px;
 }
 
 [data-tippy][data-tippy-size="jumbo"]::before {
-  font-size: 150%;
+  font-size: 20px;
 }
