@@ -14,6 +14,7 @@
   display: block;
   opacity: 0;
   transition: all var(--timing) ease-out;
+  transition-delay: var(--timing);
   font-family: sans-serif;
   transform: translate3d(-50%, 0, 0);
   transform-origin: top;
@@ -252,4 +253,30 @@
 
 [data-tippy][data-tippy-pos='right'][data-tippy-animate='bubble']:hover::before {
   clip-path: circle(100% at 50%);
+}
+
+/* force display */
+
+[data-tippy][data-tippy-visible]::before,
+[data-tippy][data-tippy-visible]::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* sizes */
+
+[data-tippy][data-tippy-size="tiny"]::before {
+  font-size: 50%;
+}
+
+[data-tippy][data-tippy-size="small"]::before {
+  font-size: 75%;
+}
+
+[data-tippy][data-tippy-size="large"]::before {
+  font-size: 125%;
+}
+
+[data-tippy][data-tippy-size="jumbo"]::before {
+  font-size: 150%;
 }
