@@ -120,7 +120,16 @@
 <h3>
 <a id="special-animations" class="anchor" href="#special-animations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Special animations</h3>
 
-<p>The tooltips don't have much by way of default animation. They fade in, but that's it. There are two optional animation types, however. Include the <code>data-tippy-animate</code> property and one of two values, "slide" or "bubble".</p>
+<p>By default, tooltips aren't animated. Include the optional <code>data-tippy-animate</code> property to add a fade effect.</p>
+<p>Use one of two optional values &ndash; "slide" or "bubble" &ndash; for more fancy.</p>
+
+<h4>Fade:</h4>
+<p>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="up" data-tippy-animate>Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="down" data-tippy-animate>Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="left" data-tippy-animate>Hover me</span>
+  <span class="btn" data-tippy="Isn't this neat?" data-tippy-pos="right" data-tippy-animate>Hover me</span>
+</p>
 
 <h4>Slide:</h4>
 <p>
@@ -166,9 +175,8 @@
 </li>
 <li><p>If your stylesheet is using pseudo-elements on certain elements, you will run into conflicts. This will result in weird behavior or non-working tooltips.</p></li>
 <li><p>HTML inside tooltips will not work, so don't even try.</p></li>
-<li><p>Tooltips don't work on <code>&lt;button&gt;</code> elements in Internet Explorer. I don't know why. :/</p></li>
 <li><p>The bubble animation uses the <code>clip-path</code> property, and (as of this writing) only works in Chrome, Vivaldi, and Safari.</p></li>
-<li><p>Tooltips on links that underline on hover get underlined in Edge.</p></li>
+<li><p>Tooltips on links that underline on hover get underlined in Internet Explorer and Edge.</p></li>
 <li><p>Tooltips on buttons get included in the focus outline, like so:</p>
   <p>
     <button type="button" data-tippy="Tooltip" class="outline-auto" data-tippy-visible>Hovered button</button>
