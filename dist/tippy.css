@@ -7,8 +7,6 @@
   position: absolute;
   display: block;
   opacity: 0;
-  transition: all .18s ease-out;
-  transition-delay: .18s;
   font-family: sans-serif;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -169,6 +167,20 @@
   opacity: 1;
 }
 
+/* animated */
+
+[data-tippy][data-tippy-animate]:before,
+[data-tippy][data-tippy-animate]:after {
+  transition-delay: .18s;
+}
+
+/* animated - fade */
+
+[data-tippy][data-tippy-animate='fade']:before,
+[data-tippy][data-tippy-animate='fade']:after {
+  transition: opacity .18s ease-out;
+}
+
 /* animated - slide */
 
 [data-tippy][data-tippy-animate='slide']:before,
@@ -304,18 +316,18 @@
 
 /* sizes */
 
-[data-tippy][data-tippy-size="tiny"]:before {
+[data-tippy][data-tippy-size='tiny']:before {
   font-size: 10px;
 }
 
-[data-tippy][data-tippy-size="small"]:before {
+[data-tippy][data-tippy-size='small']:before {
   font-size: 12px;
 }
 
-[data-tippy][data-tippy-size="large"]:before {
+[data-tippy][data-tippy-size='large']:before {
   font-size: 16px;
 }
 
-[data-tippy][data-tippy-size="jumbo"]:before {
+[data-tippy][data-tippy-size='jumbo']:before {
   font-size: 20px;
 }
