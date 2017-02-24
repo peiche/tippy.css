@@ -167,18 +167,17 @@
   opacity: 1;
 }
 
-/* animated */
+/* animated - fade (default) */
 
 [data-tippy][data-tippy-animate]:before,
 [data-tippy][data-tippy-animate]:after {
+  transition: all .18s ease-out;
   transition-delay: .18s;
 }
 
-/* animated - fade */
-
-[data-tippy][data-tippy-animate='fade']:before,
-[data-tippy][data-tippy-animate='fade']:after {
-  transition: opacity .18s ease-out;
+[data-tippy][data-tippy-animate]:hover:before,
+[data-tippy][data-tippy-animate]:hover:after {
+  transition-delay: 0;
 }
 
 /* animated - slide */

@@ -163,6 +163,11 @@
   transition-delay: var(--timing);
 }
 
+[data-tippy][data-tippy-animate]:hover::before,
+[data-tippy][data-tippy-animate]:hover::after {
+  transition-delay: 0;
+}
+
 /* animated - slide */
 
 [data-tippy][data-tippy-animate='slide']::before,
