@@ -171,13 +171,13 @@
 
 [data-tippy][data-tippy-animate]:before,
 [data-tippy][data-tippy-animate]:after {
-  transition: all .18s ease-out;
-  transition-delay: .18s;
+  transition: all 150ms ease-out;
+  transition-delay: 0s;
 }
 
 [data-tippy][data-tippy-animate]:hover:before,
 [data-tippy][data-tippy-animate]:hover:after {
-  transition-delay: 0;
+  transition-delay: 150ms;
 }
 
 /* animated - slide */

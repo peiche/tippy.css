@@ -1,7 +1,7 @@
 :root {
   --background-color: #000;
   --color: #fff;
-  --timing: .18s;
+  --timing: 150ms;
 }
 
 [data-tippy] {
@@ -160,12 +160,12 @@
 [data-tippy][data-tippy-animate]::before,
 [data-tippy][data-tippy-animate]::after {
   transition: all var(--timing) ease-out;
-  transition-delay: var(--timing);
+  transition-delay: 0s;
 }
 
 [data-tippy][data-tippy-animate]:hover::before,
 [data-tippy][data-tippy-animate]:hover::after {
-  transition-delay: 0;
+  transition-delay: var(--timing);
 }
 
 /* animated - slide */
